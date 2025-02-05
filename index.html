@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+        .social-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .github { background-color: #333; }
+        .roblox { background-color: #FF0000; }
+        .discord { background-color: #7289DA; }
+        .scratch { background-color: #FF9933; }
+        @keyframes slide {
+            from {background-position: 0 0;}
+            to {background-position: -10000px 0;}
+        }
+        .animated-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://cdna.artstation.com/p/assets/images/images/063/405/838/original/lounki-gojo.gif?1685460788') repeat-x;
+            z-index: 1;
+            animation: slide 60s linear infinite;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-background"></div>
+    <div class="container">
+        <audio id="music" src="your-song.mp3" autoplay loop></audio>
+        <img src="https://avatars.githubusercontent.com/u/162757246?v=4" alt="https://avatars.githubusercontent.com/u/162757246?v=4" style="max-width: 100%; height: auto;">
+        <h1>Scaroontop</h1>
+        <div class="social-buttons">
+            <a href="https://github.com/Scaroontop" class="github">GitHub</a>
+            <a href="https://www.roblox.com/users/your-profile" class="roblox">Roblox</a>
+            <a href="https://discord.com/users/your-profile" class="discord">Discord</a>
+            <a href="https://scratch.mit.edu/users/your-profile" class="scratch">Scratch</a>
+        </div>
+    </div>
+</body>
+</html>
