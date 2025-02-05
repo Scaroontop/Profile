@@ -19,18 +19,28 @@
             z-index: 2;
             color: white;
         }
+        .circle-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
         .social-buttons a {
             display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
+            padding: 10px;
             text-decoration: none;
             color: white;
             border-radius: 5px;
         }
-        .github { background-color: #333; }
-        .roblox { background-color: #FF0000; }
-        .discord { background-color: #7289DA; }
-        .scratch { background-color: #FF9933; }
+        .social-buttons img {
+            width: 50px;
+            height: 50px;
+        }
+        .github img { content: url('github-logo.png'); }
+        .roblox img { content: url('roblox-logo.png'); }
+        .discord img { content: url('discord-logo.png'); }
+        .scratch img { content: url('scratch-logo.png'); }
         @keyframes slide {
             from {background-position: 0 0;}
             to {background-position: -10000px 0;}
@@ -41,10 +51,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://cdna.artstation.com/p/assets/images/images/063/405/838/original/lounki-gojo.gif?1685460788') repeat-x;
+            background: url('https://i.pinimg.com/originals/14/fc/7d/14fc7d1120735dd8e2064a38913ea339.gif') repeat-x;
             z-index: 1;
             animation: slide 60s linear infinite;
             opacity: 0.5;
+        }
+        h1 {
+            color: black;
         }
     </style>
 </head>
@@ -52,14 +65,14 @@
     <div class="animated-background"></div>
     <div class="container">
         <audio id="music" src="your-song.mp3" autoplay loop></audio>
-        <img src="https://avatars.githubusercontent.com/u/162757246?v=4" alt="https://avatars.githubusercontent.com/u/162757246?v=4" style="max-width: 100%; height: auto;">
+        <img src="https://avatars.githubusercontent.com/u/162757246?v=4" alt="Your Image" class="circle-image">
         <h1>Scaroontop</h1>
         <div class="social-buttons">
-            <a href="https://github.com/Scaroontop" class="github">GitHub</a>
-            <a href="https://www.roblox.com/users/your-profile" class="roblox">Roblox</a>
-            <a href="https://discord.com/users/your-profile" class="discord">Discord</a>
-            <a href="https://scratch.mit.edu/users/your-profile" class="scratch">Scratch</a>
+            <a href="https://github.com/Scaroontop" class="github"><img src="github-logo.png" alt="GitHub"></a>
+            <a href="https://www.roblox.com/users/your-profile" class="roblox"><img src="roblox-logo.png" alt="Roblox"></a>
+            <a href="https://discord.com/users/your-profile" class="discord"><img src="discord-logo.png" alt="Discord"></a>
+            <a href="https://scratch.mit.edu/users/your-profile" class="scratch"><img src="scratch-logo.png" alt="Scratch"></a>
         </div>
     </div>
 </body>
-</html>
+</html>  
